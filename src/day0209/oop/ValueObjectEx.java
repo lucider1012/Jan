@@ -1,0 +1,38 @@
+package day0209.oop;
+
+public class ValueObjectEx {
+    //VO : value object - 값을 표현(저장)하기 위한 객체. 캡슐화 패턴을 적용한다.
+    //접근 제어자 변수 선언;
+    //생성자
+    //getter/[setter]로 구성됨
+    //[]는 생략 가능
+    private String restaurant;
+    private String food;
+    private int quantity;
+
+    public ValueObjectEx(String restaurant, String food, int quantity) {
+        this.restaurant = restaurant;
+        this.food = food;
+        this.quantity = quantity;
+    }
+
+    public String getRestaurant() {
+        return restaurant;
+    }
+
+    public String getFood() {
+        return food;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setFood(String food) {
+        this.food = food;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+}
